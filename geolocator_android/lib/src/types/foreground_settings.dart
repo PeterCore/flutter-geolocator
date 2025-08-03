@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:geolocator_android/src/types/color_extension.dart';
+
 /// Uniquely identifies an Android resource.
 class AndroidResource {
   /// The name of the desired resource.
@@ -119,7 +121,7 @@ class ForegroundNotificationConfig {
       'notificationText': notificationText,
       'notificationChannelName': notificationChannelName,
       'setOngoing': setOngoing,
-      'color': color?.toARGB32(),
+      'color': color?.toARGB32Custom(),
     };
   }
 }

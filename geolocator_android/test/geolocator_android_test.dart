@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:geolocator_android/geolocator_android.dart';
+import 'package:geolocator_android/src/types/color_extension.dart';
 
 import 'event_channel_mock.dart';
 import 'method_channel_mock.dart';
@@ -1511,7 +1512,7 @@ void main() {
         );
         expect(
           jsonMap['foregroundNotificationConfig']['color'],
-          settings.foregroundNotificationConfig!.color!.toARGB32,
+          settings.foregroundNotificationConfig!.color!.toARGB32Custom,
         );
       });
 
